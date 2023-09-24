@@ -108,7 +108,7 @@
                     const taskItem = document.createElement("li");
                     taskItem.innerHTML = `
                         ${taskText}
-                        <button class="delete">Delete</button>
+                        <button class="delete" onclick="alert('Task will be deleted!')">Delete</button>
                     `;
                     taskList.appendChild(taskItem);
 
