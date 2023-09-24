@@ -118,6 +118,9 @@
                     errorDiv.textContent = ""; // Clear any previous error messages
                 } else {
                     errorDiv.textContent = "Please enter a task."; // Show error message
+                    setTimeout(() => {
+                        errorDiv.textContent = ""; // Clear error message after 3 seconds
+                    }, 3000); // 3000 milliseconds (3 seconds)
                 }
             });
 
